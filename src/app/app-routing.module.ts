@@ -5,6 +5,8 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TeamsComponent } from './teams/teams.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { TeamMemberComponent } from './teams/team-member/team-member.component';
+import { DemoComponent } from './demo/demo.component';
 
 const routes: Routes = [
   {
@@ -29,8 +31,16 @@ const routes: Routes = [
     component: TeamsComponent,
   },
   {
+    path: 'team-members',
+    component: TeamMemberComponent,
+  },
+  {
     path: 'contact-us',
     component: ContactUsComponent,
+  },
+  {
+    path:'demo',
+    component: DemoComponent
   }
 ];
 

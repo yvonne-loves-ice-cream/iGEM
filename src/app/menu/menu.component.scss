@@ -1,29 +1,37 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.topnav {
     overflow: hidden;
+    position: fixed;
+    top: 0;
     background-color: #ffffff;
-    display: flex;
+    width: 100%;
+    z-index: 99;
 }
 
-li a {
+.bars {
+    margin-left: 50em;
+}
+
+.topnav a {
+    float: left;
     display: block;
     color: black;
     text-align: center;
-    padding: 16px;
+    padding: 40px 30px;
     text-decoration: none;
     font-family: Avenir;
-    font-size: 20px;
+    font-size: 30px;
     color: #17425A;
+    z-index: 100;
 }
 
-li a:hover {
-    background-color: #f6f6f6;
+a.category-link:hover {
+    background-color: #66E0FA;
+    color: #ffffff !important;
 }
 
 .active {
-    margin-left: 15px;
-    margin-right: 200px;
-    margin-top: -15px;
+    height: 1.8em;
+    // margin-right: 14em;
+    margin-left: 1em;
+    margin-top: -0.1em;
 }

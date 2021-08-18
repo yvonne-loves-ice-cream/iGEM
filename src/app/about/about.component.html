@@ -1,1 +1,44 @@
-<p>about works!</p>
+<div class="top">
+    <div class="break-30"></div>
+    <span class="intro-title"> Who</span>
+    <br />
+    <span class="intro-title title-bold"> <mark class="purple">Are We </mark></span>
+    <br />
+    <div>
+        <p class="para">
+            iGEM stands for International Genetic Engineered Machine and is an international synthetic biology competition open to high school, undergraduate and graduate students. Each year’s competition begins in January and culminates with a Giant Jamboree in
+            October of the same year. iGEM Toronto is an interdisciplinary team that is always eager to learn from each other’s expertise.
+        </p>
+        <p class="para">
+            We identify problems in our community, propose a synthetic biology-based solution, and execute it to the best of our ability. It’s a friendly group where computer scientists learn the ethical implications of their work, where biologists learn data analysis
+            tools using machine learning, where engineers learn about the beautiful complexity of the cell, where bioethicists actively inquire about the possibilities of synthetic biology, where we all work together toward synthesizing our ideas into
+            something bigger than any one of us could have achieved alone.
+        </p>
+    </div>
+
+    <div class="contents">
+        <div *ngFor="let item of aboutList">
+            <div class="top-50"></div>
+            <div class="right">
+                <span class="title">{{item.title}}</span>
+                <br>
+                <div class="margin-30"></div>
+                <span class="description">{{item.description}}</span>
+                <br>
+                <div class="margin-30"></div>
+
+
+            </div>
+            <img class="photo" *ngIf="item" src={{item.url}} alt="team_img">
+
+            <div class="margin-50">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+<app-footer></app-footer>

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
@@ -10,7 +10,16 @@ import { TeamsComponent } from './teams/teams.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { MenuComponent } from './menu/menu.component';
 import {MatIconModule} from '@angular/material/icon';
-import{MatButtonModule} from '@angular/material/button'
+import{MatButtonModule} from '@angular/material/button';
+import { FooterComponent } from './footer/footer.component'
+import {MatInputModule} from '@angular/material/input';
+import {ReactiveFormsModule} from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TeamMemberComponent } from './teams/team-member/team-member.component';
+import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DemoComponent } from './demo/demo.component';
+import { MemberDetailComponent } from './teams/member-detail/member-detail.component';
 
 
 @NgModule({
@@ -21,13 +30,23 @@ import{MatButtonModule} from '@angular/material/button'
     ProjectsComponent,
     TeamsComponent,
     ContactUsComponent,
-    MenuComponent
+    MenuComponent,
+    FooterComponent,
+    TeamMemberComponent,
+    ProjectDetailComponent,
+    DemoComponent,
+    MemberDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

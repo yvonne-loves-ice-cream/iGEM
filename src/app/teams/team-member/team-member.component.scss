@@ -1,0 +1,35 @@
+.body {
+    margin: 180px 150px;
+}
+
+.title {
+    font-family: Verdana;
+    font-size: 100px;
+    color: #17425A;
+}
+
+.name {
+    font-family: Avenir;
+    font-size: 40px;
+    color: #17425A;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo {
+    width: 90%;
+    height: 60%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.member {
+    width: 33.3%;
+}
+
+.break-80 {
+    margin-bottom: 80px;
+}

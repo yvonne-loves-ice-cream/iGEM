@@ -8,7 +8,11 @@
 }
 
 .bars {
-    margin-left: 50em;
+    float: right;
+    margin-right: 20px;
+    // @include sm {
+    //     margin-right: 0px;
+    // }
 }
 
 .topnav a {
@@ -31,7 +35,37 @@ a.category-link:hover {
 
 .active {
     height: 1.8em;
-    // margin-right: 14em;
     margin-left: 1em;
     margin-top: -0.1em;
+}
+
+.toptav .icon {
+    display: none;
+    @include md {
+        display: block;
+    }
+}
+
+@include md {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive li {
+        float: none;
+        display: block;
+        text-align: left;
+        float: none !important;
+    }
+    .topnav.responsive a {
+        text-align: left;
+        background-color: #f6f6f6
+    }
+    .topnav.responsive a:hover {
+        background-color: #ffffff;
+    }
 }

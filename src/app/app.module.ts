@@ -21,6 +21,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { DemoComponent } from './demo/demo.component';
 import { MemberDetailComponent } from './teams/member-detail/member-detail.component';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SponsorComponent } from './sponsor/sponsor.component';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +38,8 @@ import { MemberDetailComponent } from './teams/member-detail/member-detail.compo
     TeamMemberComponent,
     ProjectDetailComponent,
     DemoComponent,
-    MemberDetailComponent
+    MemberDetailComponent,
+    SponsorComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +50,8 @@ import { MemberDetailComponent } from './teams/member-detail/member-detail.compo
     MatInputModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

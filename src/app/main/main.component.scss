@@ -1,3 +1,11 @@
+.body {
+    margin: 120px 0px;
+}
+
+.margin-side {
+    margin: 0px 100px;
+}
+
 .title-bold {
     font-weight: bold;
     color: #17425A;
@@ -9,7 +17,6 @@
 
 .title {
     font-family: Verdana;
-    margin-left: 100px;
     font-size: 100px;
     font-weight: bold;
 }
@@ -46,13 +53,8 @@ mark {
     width: 720px;
 }
 
-.item {
-    margin-top: 180px;
-}
-
 button {
     background-color: #7F89E3;
-    margin-left: 100px;
     color: #ffffff;
     font-weight: 500;
     font-size: 40px;
@@ -67,7 +69,7 @@ button {
 }
 
 .view-project {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .blast {
@@ -79,7 +81,6 @@ button {
 
 .arrow {
     transform: scale(2);
-    margin-left: 2px;
 }
 
 #we {
@@ -112,8 +113,8 @@ button {
 
 .wall {
     font-size: 80px;
-    margin-left: 70px;
     position: absolute;
+    margin-left: -30px;
 }
 
 .hashtags {
@@ -130,14 +131,12 @@ button {
 }
 
 .under {
-    margin-top: 100px;
-    margin-left: 100px;
+    margin-top: 70px;
     position: absolute;
 }
 
 .intro {
     background-color: #F1F1F3;
-    width: 100%;
     margin-top: 300px;
     color: #17425A;
 }
@@ -145,7 +144,6 @@ button {
 .intro-title {
     font-family: Verdana;
     font-size: 100px;
-    margin-left: 100px;
     color: #17425A;
 }
 
@@ -155,6 +153,27 @@ button {
     color: #17425A;
 }
 
+img.my-pic {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.box {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: auto 80px;
+    // border-left: 3px solid grey;
+}
+
+.my-pic {
+    margin: 0 40px;
+    max-width: 300px;
+    // margin-left: 30px;
+}
+
 .para {
     font-size: 40px;
     font-family: Avenir;
@@ -162,7 +181,6 @@ button {
 }
 
 .part2 {
-    margin-left: 100px;
     margin-top: 50px;
 }
 
@@ -174,14 +192,13 @@ button {
 
 .greenline {
     border-left: 10px solid #66E0FA;
-    height: 540px;
     margin-top: 70px;
 }
 
 .para2 {
     font-family: Avenir;
     font-size: 40px;
-    width: 40%;
+    width: 50%;
     padding-left: 80px;
     display: inline-block;
     margin-top: -10px;
@@ -199,7 +216,6 @@ button {
     float: right;
     margin-top: -90px;
     margin-bottom: -100px;
-    margin-right: 100px;
 }
 
 img.bottle {
@@ -216,9 +232,10 @@ b3 {
 }
 
 .b-whatever {
-    display: inline-block;
+    // display: inline-block;
     font-family: Avenir;
     padding: 55px 70px !important;
+    margin-top: -50px;
 }
 
 .b2 {
@@ -250,32 +267,23 @@ b3 {
 .year {
     font-size: 30px;
     font-family: Avenir;
+    width: 33.3%;
+    text-align: center;
 }
 
 .protein {
-    width: 250px;
-    margin-left: 200px;
-}
-
-.l1 {
-    margin-left: 250px;
-}
-
-.l2 {
-    margin-left: 100px;
+    width: 75%;
 }
 
 .announce {
     font-family: Verdana;
     font-size: 60px;
-    margin-left: 100px;
 }
 
 .thx {
     font-family: Avenir;
     font-size: 40px;
     color: #17425A;
-    margin-left: 100px;
 }
 
 .arrow-right {
@@ -319,10 +327,9 @@ b3 {
     color: #17425A;
 }
 
-.sponser-image {
-    width: 25%;
-}
-
+// .sponser-image {
+//     width: 25%;
+// }
 .break-45 {
     margin-bottom: 45px;
 }
@@ -330,17 +337,14 @@ b3 {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 100px;
-}
-
-.my-pic {
-    width: 95%;
-    top: 50%;
-    left: 50%;
-    transform: translate(0, -50%);
+    margin: 50px 0px;
 }
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
+}
+
+.my-pic {
+    margin: auto;
 }

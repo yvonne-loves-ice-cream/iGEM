@@ -14,9 +14,11 @@
     color: #17425A;
 }
 
-.container {
+.flex-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    // width: 100%;
 }
 
 .photo {
@@ -27,7 +29,7 @@
 }
 
 .member {
-    width: 33.3%;
+    width: 25%;
 }
 
 .break-80 {

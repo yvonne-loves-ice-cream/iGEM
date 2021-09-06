@@ -5,6 +5,11 @@
                 <img class="active" src="assets/main/logo.png">
             </a>
         </span>
+        <span class="icon">
+            <button mat-icon-button (click)="openMenu()">
+                <mat-icon>more_vert</mat-icon>
+                </button>
+        </span>
         <div class="bars">
             <span *ngFor="let item of menu">
             <a [routerLink]="[item.routePath]" routerLinkActive="is-currentRoute" class="category-link">{{item.linkName}}</a>

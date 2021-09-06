@@ -20,11 +20,11 @@ subscriptions: Array<any> = [];
     this.getProjectList()
   }
 
-  projectDetail(): void{
+  projectDetail(id: number): void{
     const dialogRef = this.dialog.open(ProjectDetailComponent, {
       width: '1200px',
       height: '800px',
-      data: {}
+      data: {projectId: id}
     });
   }
 

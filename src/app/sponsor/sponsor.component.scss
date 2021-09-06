@@ -1,0 +1,95 @@
+.content {
+    margin: 150px 100px;
+}
+
+.intro-title {
+    font-family: Verdana;
+    font-size: 90px;
+    color: #17425A;
+}
+
+.title-bold {
+    font-weight: bold;
+    color: #17425A;
+}
+
+.title {
+    border-bottom: 8px #66E0FA solid;
+    color: #17425A;
+}
+
+mark {
+    display: inline-block;
+    height: 0.35em;
+    line-height: 0.05;
+    background-color: #66E0FA;
+    color: #17425A !important;
+}
+
+.purple {
+    background-color: #C8B0E3;
+}
+
+.margin-75 {
+    margin-bottom: 75px;
+}
+
+.the-container {
+    position: relative;
+    width: 33.3%;
+}
+
+.centered-text {
+    position: absolute;
+    top: 30%;
+    font-size: 35px;
+    font-family: Avenir;
+    color: #17425A
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.para {
+    font-family: Avenir;
+    font-size: 32px;
+    color: #17425A;
+    font-weight: 500;
+}
+
+.subtitle {
+    font-family: Verdana;
+    font-size: 60px;
+    font-weight: bold;
+    color: #17425A;
+    border-bottom: 8px #66E0FA solid !important;
+}
+
+.para2 {
+    font-family: Avenir;
+    font-size: 35px;
+    color: #17425A;
+}
+
+.margin-35 {
+    margin-bottom: 35px;
+}
+
+.blast {
+    background-color: #19415A !important;
+    border-radius: 10px;
+    padding: 35px 60px;
+}
+
+button {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: Avenir;
+}
+
+.second {
+    margin-left: 20%;
+}

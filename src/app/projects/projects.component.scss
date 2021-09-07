@@ -32,10 +32,16 @@ mark {
 }
 
 .view-demo {
-    color: #19415A;
+    color: #19415A !important;
     font-size: 50px;
     font-family: Avenir;
     font-weight: 800;
+}
+
+.arrow {
+    height: 40px;
+    margin-left: 40px;
+    transform: scale(2);
 }
 
 .flex-container {
@@ -46,8 +52,8 @@ mark {
 .card {
     border-radius: 25px;
     background-color: #FAFAFC;
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
     margin-right: 100px;
     margin-top: 100px;
 }
@@ -79,7 +85,7 @@ mark {
 
 .description {
     color: #19415A;
-    font-size: 36px;
+    font-size: 34px;
     font-family: Avenir;
 }
 

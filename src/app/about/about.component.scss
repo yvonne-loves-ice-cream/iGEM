@@ -1,5 +1,17 @@
 .top {
-    margin: 150px 100px;
+    margin: 150px 0px;
+}
+
+mark {
+    display: inline-block;
+    height: 0.35em;
+    line-height: 0.01;
+    background-color: #C8B0E3;
+    color: #17425A !important;
+}
+
+.margin-side {
+    margin: 0 100px
 }
 
 .intro-title {
@@ -13,16 +25,13 @@
     color: #17425A;
 }
 
-mark {
-    display: inline-block;
-    height: 0.35em;
-    line-height: 0.05;
-    background-color: #66E0FA;
-    color: #17425A !important;
+.title {
+    border-bottom: 8px #66E0FA solid;
+    color: #17425A;
 }
 
 .purple {
-    background-color: #C8B0E3;
+    border-bottom: 8px #C8B0E3 solid !important;
 }
 
 .para {
@@ -56,7 +65,11 @@ mark {
 }
 
 .top-50 {
-    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.bottom-50 {
+    padding-bottom: 50px;
 }
 
 .description {
@@ -103,4 +116,28 @@ button {
     font-family: Avenir;
     border: none;
     border-radius: 10px;
+}
+
+.grey-bg {
+    background-color: #F1F1F3;
+}
+
+.links {
+    font-family: Avenir;
+    font-size: 40px;
+    font-weight: 400;
+    color: #17425A;
+}
+
+.arrow {
+    height: 50px;
+    margin-left: 20px;
+}
+
+a {
+    color: #17425A
+}
+
+a:hover {
+    text-decoration: none;
 }

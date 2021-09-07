@@ -1,10 +1,10 @@
 <div class="top">
     <div class="break-30"></div>
-    <span class="intro-title"> Who</span>
+    <span class="intro-title margin-side"> Who</span>
     <br />
-    <span class="intro-title title-bold"> <mark class="purple">Are We </mark></span>
+    <span class="intro-title title-bold margin-side"> <mark class="purple">Are We </mark></span>
     <br />
-    <div>
+    <div class="margin-side">
         <p class="para">
             iGEM stands for International Genetic Engineered Machine and is an international synthetic biology competition open to high school, undergraduate and graduate students. Each year’s competition begins in January and culminates with a Giant Jamboree in
             October of the same year. iGEM Toronto is an interdisciplinary team that is always eager to learn from each other’s expertise.
@@ -18,23 +18,37 @@
 
     <div class="contents">
         <div *ngFor="let item of aboutList">
-            <div class="top-50"></div>
-            <div class="right">
-                <span class="title">{{item.title}}</span>
-                <br>
-                <div class="margin-30"></div>
-                <span class="description">{{item.description}}</span>
-                <br>
-                <div class="margin-30"></div>
+            <div [ngClass]="{'grey-bg' : item.id%2 ==1}">
+                <div class="margin-side">
+                    <div class="top-50"></div>
+                    <div class="right">
+                        <span class="title" [ngClass]="{'purple' : item.id%2 ==0}">{{item.title}}</span>
+                        <br>
+                        <div class="margin-30"></div>
+                        <span class="description">{{item.description}}</span>
+                        <br>
+                        <div class="margin-30"></div>
 
 
+                    </div>
+                    <img class="photo" *ngIf="item" src={{item.url}} alt="team_img">
+
+                    <div class="bottom-50">
+                    </div>
+                </div>
             </div>
-            <img class="photo" *ngIf="item" src={{item.url}} alt="team_img">
-
-            <div class="margin-50">
-            </div>
-
         </div>
+    </div>
+    <div class="top-50"></div>
+    <div class="links margin-side">
+        <a routerLink="/our-teams">Join our team <img src="../../assets/main/arrow_blue.svg" alt="img" class="arrow"></a>
+        <br>
+        <div class="margin-30"></div>
+        <a href="/our-projects">View past projects <img src="../../assets/main/arrow_blue.svg" alt="img" class="arrow"></a>
+
+        <br>
+        <div class="margin-30"></div>
+        <a href="">Subscribe to newsletters <img src="../../assets/main/arrow_blue.svg" alt="img" class="arrow"></a>
 
     </div>
 

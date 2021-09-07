@@ -11,6 +11,7 @@
         </p>
         <a class="view-demo">
             View 2021 project demo
+            <img src="../../assets/main/arrow_blue.svg" alt="img" class="arrow">
         </a>
 
     </div>
@@ -18,7 +19,7 @@
     <div class="flex-container">
 
         <div *ngFor="let item of projectList" class="card">
-            <a (click)="projectDetail()" class="detail-a">
+            <a (click)="projectDetail(item.id)" class="detail-a">
                 <div class="container">
                     <div class="right">
                         <span class="title">{{item.year}}</span>

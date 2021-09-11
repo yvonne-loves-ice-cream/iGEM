@@ -31,9 +31,9 @@ a.category-link:hover {
 }
 
 .active {
-    height: 1.8em;
-    margin-left: 1em;
-    margin-top: -0.1em;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: -7px;
 }
 
 .topnav .icon {
@@ -41,6 +41,11 @@ a.category-link:hover {
 }
 
 @media screen and (max-width: 800px) {
+    .active {
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
     .topnav .icon {
         float: right;
         display: block !important;

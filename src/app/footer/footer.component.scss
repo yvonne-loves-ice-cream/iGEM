@@ -29,7 +29,7 @@ a {
     margin-left: 10px;
 }
 
-.footer .fa {
+.myfooter .fa {
     cursor: pointer;
     color: #484F50;
     font-size: 30px;
@@ -77,4 +77,29 @@ a {
     height: 40px;
     margin-left: -70px;
     margin-bottom: -10px;
+}
+
+@media screen and (max-width: 800px) {
+    .myfooter{
+        display: none;
+    }
+    .noshow{
+        display: none;
+    }
+    p {
+        font-size: 10px;
+    }
+    .mat-form-field {
+        width: 200px !important;
+        font-size: 13px;
+    }
+    .arrow {
+        height: 10px;
+        margin-left: -70px;
+        margin-bottom: -10px;
+    }
+    .my-form {
+        margin-left: 0px;
+        position: float
+    }
 }

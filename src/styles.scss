@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+html {
+    font-size: calc(1em + 1vw)
+}
+
 .mat-dialog-container {
     border-radius: 20px !important;
 }
